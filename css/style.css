@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body{
+    background-color: #162D8C;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+}
+
+nav {
+    background-color: #162D8C;
+}
+
+nav li {
+
+    margin-left: 20px;
+}
+
+nav .fa-bars{
+    color: #FFF;
+}
+
+nav a {
+    color: #FFF;
+    text-transform: lowercase;
+}
+
+nav a:hover {
+    color: #FFF;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFF;
+    transition: width .3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+nav .navbar-nav li.active > a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+}
+
+/*-- START HOME SECTION --*/
+
+#home{
+    margin-top: 58px;
+}
+
+#home .row{
+    height: 700px; 
+}
+
+#home .btn-lg{
+    border: 2px solid #FFF;
+    background-color: #FFF;
+    color: #162D8C;
+    width: 100%;
+}
+
+#home .btn-lg:hover{
+    background-color: #162D8C;
+    color: #FFF;
+}
+
+/*-- END HOME SECTION --*/
+
+
+/*-- START ABOUT ME SECTION --*/
+
+#aboutMe {
+    background-color: #FFF;
+    color: #162D8C;
+}
+
+#aboutMe .row{
+    height: 700px; 
+}
+
+#aboutMe .btn-lg{
+    border: 2px solid #162D8C;
+    background-color: #FFF;
+    color: #162D8C;
+}
+
+#aboutMe .btn-lg:hover{
+    background-color: #162D8C;
+    color: #FFF;
+}
+
+/*-- END ABOUT ME  SECTION --*/
+
+
+/*-- START SKILLS SECTION --*/
+#skills{
+    height: 700px; 
+}
+
+#skills .skill{
+    color: #FFF;
+    font-size: 32px;
+    width: 30%;
+}
+
+#skills .progress{
+    height: 10px;
+    border: 1px solid #FFF;
+    background-color: #162D8C;
+}
+
+#skills .progress-bar {
+    background-color: #FFF;
+}
+
+/*-- END SKILLS  SECTION --*/
+
+
+/*-- START SERVICES SECTION --*/
+
+#services{
+    background-color: #FFF;
+    color: #162D8C;
+}
+
+#services .row{
+    height: 596px;
+}
+
+#services .card{
+    border: 2px solid #162D8C;
+    width: 300px;
+}
+
+/*-- END SERVICES  SECTION --*/
+
+
+/*-- START CONTACT SECTION --*/
+
+#contact .row{
+    height: 600px;
+}
+
+#contact a{
+    color: #FFF;
+}
+
+#contact li{
+    height: 100px;
+}
+
+#contact a:hover > i{
+    font-size: 5em;
+}
+
+/*-- START END SECTION --*/
+
+
+/*-------- MEDIA QUERIES --------*/
+
+@media (max-width:1000px){
+    #services .service{
+        width: 100%;
+        margin: 0 100px 0;
+        
+    }
+
+    #services .row{
+        height: 620px;
+    }
+}
+
+@media (max-width:500px){
+
+    #home .row{
+        height: 400px;
+    }
+    #home h1{
+        font-size: 36px;
+    }
+    #home h3{
+        font-size: 24px;
+    }
+
+    #aboutMe .row{
+        height: 500px;
+    }
+
+    #aboutMe h1{
+        font-size: 24px;
+    }
+
+    #aboutMe h3{
+        font-size: 16px;
+    }
+
+    #aboutMe p{
+        font-size: 14px;
+    }
+    
+    #aboutMe .btn-lg{
+
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+    }
+
+    #skills {
+        height: 500px;
+
+    }
+    #skills h1{
+        font-size: 24px;
+    }
+
+    #skills .skill{
+        font-size: 14px;
+    }
+
+    #skills .progress{
+        height: 5px;
+        margin-top: 5px !important; 
+    }
+
+    #services h1{
+        font-size: 24px;
+    }
+
+    #services i{
+
+        font-size: 3em;
+    }
+    #services h4{
+
+        font-size: 16px;
+    }
+
+    #services .service{
+        margin: 0 50px 0;
+    }
+
+    #contact .row{
+        height: 400px;
+    }
+
+    #contact h1{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #contact i{
+        font-size: 2em;
+    }
+
+    #contact a:hover > i{
+        font-size: 3em;
+    }
+
+    .copyRight{
+
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
