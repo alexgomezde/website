@@ -103,7 +103,7 @@ nav .navbar-nav li.active > a::after {
 
 /*-- START SKILLS SECTION --*/
 #skills{
-    height: 700px; 
+    height: 800px; 
 }
 
 #skills .skill{
@@ -220,7 +220,7 @@ nav .navbar-nav li.active > a::after {
     }
 
     #skills {
-        height: 600px;
+        height: 650px;
 
     }
     #skills h1{
